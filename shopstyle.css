@@ -1,0 +1,1525 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+}
+/* Top banner */
+#heads {
+    width: 100%;
+    height: 35px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(26, 38, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+header:hover{
+    background-color: #e6e2e2;
+}
+
+/* Header Title */
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-left: 60px;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Menu links */
+#menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#menu a:hover {
+    color: rgb(26, 38, 51);
+}
+
+/* Optional: Image link */
+#menu img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+#bodyhead {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Background image with dark overlay */
+
+
+/* Sale Section */
+#sale {
+    margin-top: 150px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0 40px;
+}
+
+/* Sale Cards (Flats) */
+#sale .flats {
+    background: #ffffff;
+    width: 250px;
+    height: 350px;
+    margin-top: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #edebeb;
+    transition: transform 0.3s ease;
+}
+
+#sale .flats:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.07);
+}
+
+#sale .flats img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#sale .flats p,
+#sale .flats h3 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#past{
+    display: flex;
+    justify-content:space-around;
+}
+#his{
+    justify-content:space-around;
+    margin: 50px;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(230, 244, 255);
+}
+#reviews p{
+    margin-left: 20px;
+}
+#reviews img{
+    margin-left: 30px;
+    width: 120px;
+    height: 80px;
+}
+#reviews #id  #img2{
+    border-radius: 50%;
+    margin-right: 30px;
+    height: 90px;
+    width: 90px;
+}
+#reviews #id{
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+#reviews #id #photos{
+     margin-top: 20px;
+}
+#bottom{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+#bottom #address{
+    text-align: left;
+    margin-top: 50px;
+}
+#bottom p{
+    font-size: 16px;
+    margin-top: 15px;
+    color: rgb(107, 108, 114);
+}
+#bottom h2{
+    margin-top: 0%;
+    color: rgb(107, 108, 114);
+}
+#bottom h3{
+    margin-top: 15px;
+    color: rgb(19, 19, 20);
+}
+#bottom map{
+    border: solid 2px white;
+    box-shadow: #ffffff 4px 4px 4px 4px;
+}
+#footer{
+    padding-top: 50px;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    background-color: rgb(26, 38, 51);
+}
+#footer #contact #icons{
+display: flex;
+
+}
+#footer #contact #icons img{
+margin-top: 10px;
+height: 40px;
+width: 40px;
+
+}
+#footer #contact p{
+    margin-top: 10px;
+
+}
+#footer form {
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#footer label {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #ffffff;
+   
+    display: block;
+}
+#footer input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+#footer button {
+    width: 180px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: rgb(58, 110, 165);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#footer #connect h2{
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+#ender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgb(26, 38, 51);
+}
+#ender h3{
+    font-weight: normal;
+    font-size: 15px;
+    padding: 15px;
+}
+#ender h3 img {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+}
+/* ================= Modal Overlay ================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vw;
+  overflow-y: auto;
+  transition: opacity 0.3s ease;
+}
+
+/* ================= Modal Box ================= */
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  width: 60vw;
+  max-width: 450px;
+  min-width: 280px;
+  max-height: 90vh;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  z-index: 10; /* content above overlay */
+  transition: transform 0.3s ease;
+}
+
+/* ================= Close Button ================= */
+.close {
+  position: absolute;
+  top: -1.5rem;         /* floats slightly outside modal */
+  right: -1.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1000; /* always above image/video */
+}
+.close:hover {
+  background: rgba(255,0,0,0.8);
+  color: #fff;
+}
+
+/* ================= Media Container ================= */
+.media-container {
+  overflow: hidden;
+  touch-action: pinch-zoom; /* allow pinch zoom on mobile */
+}
+
+/* ================= Image ================= */
+.modal-img {
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= Video ================= */
+.modal-video {
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= Flat Details ================= */
+.flat-details {
+  text-align: left;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  margin-top: 1.5vh;
+}
+.flat-details h2 {
+  margin: 0.5em 0;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+.flat-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.flat-details li {
+  margin: 4px 0;
+}
+
+/* ================= Modal Buttons ================= */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vh;
+  margin-top: 1vh;
+}
+.modal-buttons button,
+#contactWhatsApp {
+  padding: 1vh 2vw;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.modal-buttons button {
+  background-color: #007bff;
+  color: #fff;
+}
+#contactWhatsApp {
+  background-color: #25D366;
+  color: white;
+}
+.modal-buttons button:hover,
+#contactWhatsApp:hover {
+  opacity: 0.85;
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    #heads {
+    width: 100%;
+    height: 10px;
+    font-size: 5px;
+    color: white;
+    background-color: rgb(26, 38, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+header:hover{
+    background-color: #e6e2e2;
+}
+
+/* Header Title */
+header h1 {
+    font-size: 14px;
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Menu links */
+#menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 200;
+    font-size: 6px;
+    transition: color 0.3s ease;
+}
+
+#menu a:hover {
+    color: rgb(26, 38, 51);
+}
+
+/* Optional: Image link */
+#menu img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+body > h1 {
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+
+body> h4 {
+    margin-top: 05px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+.flats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+.flats img{
+    width: 100px;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 4px 8px #ffffff;
+    transition: transform 0.3s ease;
+    
+}
+#catogry {
+    
+    flex-wrap: wrap;
+    margin-left: 30px;
+    justify-content: space-around;
+    gap: 10px; /* Adds space between rows and columns */
+    padding: 40px 60px; /* Padding around the whole section */
+}
+
+#catogry > div {
+    width: 48%; /* Two items per row */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#catogry > div > img {
+    width: 180px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#catogry #types {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#catogry #types h2 {
+    font-size: 5px;
+    color: #333;
+    margin: 0;
+}
+
+#catogry #types p {
+    color: #666;
+    font-size: 4px;
+    margin-top: 1px;
+}
+
+#catogry #icons {
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+#down{
+    margin-top: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#sub{
+    margin-top: 10px;
+     display: flex;
+     justify-content: space-evenly;
+}
+#end img{
+width: 90%;
+height: 150px;
+margin: 20px;
+border-radius: 40px;
+
+}
+#bodyhead {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Background image with dark overlay */
+
+
+/* Sale Section */
+#sale {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0 40px;
+}
+
+/* Sale Cards (Flats) */
+#sale .flats {
+    background: #ffffff;
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+    margin-top: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #edebeb;
+    transition: transform 0.3s ease;
+}
+
+#sale .flats:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.07);
+}
+
+#sale .flats img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#sale .flats p,
+#sale .flats h3 {
+    margin-top: 10px;
+}
+#past{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    justify-content:space-around;
+}
+#his{
+    justify-content:space-around;
+    margin: 50px;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(230, 244, 255);
+}
+#reviews p{
+    margin-left: 20px;
+}
+#reviews img{
+    margin-left: 30px;
+    width: 120px;
+    height: 80px;
+}
+#reviews #id  #img2{
+    border-radius: 50%;
+    margin-right: 30px;
+    height: 90px;
+    width: 90px;
+}
+#reviews #id{
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+#reviews #id #photos{
+     margin-top: 20px;
+}
+#bottom{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+#bottom #address{
+    text-align: left;
+    margin-top: 50px;
+}
+#bottom p{
+    font-size: 16px;
+    margin-top: 15px;
+    color: rgb(107, 108, 114);
+}
+#bottom h2{
+    margin-top: 0%;
+    color: rgb(107, 108, 114);
+}
+#bottom h3{
+    margin-top: 15px;
+    color: rgb(19, 19, 20);
+}
+#bottom map{
+    border: solid 2px white;
+    box-shadow: #ffffff 4px 4px 4px 4px;
+}
+
+#footer{
+     padding: 10px;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    background-color: rgb(26, 38, 51);
+}
+#footer h3{
+    font-size: 15px;
+
+}
+#footer  #contact #king{
+    font-size: 10px;
+
+}
+#footer #contact #icons{
+display: flex;
+font-size: 4px;
+
+}
+#footer #contact #icons img{
+margin-top: 10px;
+height: 15px;
+width: 15px;
+
+}
+#footer #contact #king{
+    margin-top: 3px;
+    margin-left: 0%;
+
+}
+#footer form {
+    display: inline-block;
+    text-align: left;
+    border-radius: 3px;
+}
+
+#footer label {
+    margin-top: 3px;
+    font-size: 4px;
+    color: #ffffff;
+   
+    display: block;
+}
+#footer input {
+    padding: 10px;
+    width: 80px;
+    font-size: 4px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+#footer button {
+    width: 60px;
+    height: 30px;
+    padding: 12px 20px;
+    font-size: 4px;
+    background-color: rgb(58, 110, 165);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#footer p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #919296;
+    font-size: 12px;
+    padding-left: -10px;
+}
+
+#footer #connect h2{
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: 5px;
+
+}
+#ender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgb(26, 38, 51);
+}
+#ender h3{
+    font-weight: normal;
+    font-size: 5px;
+    padding: 5px;
+}
+#ender h3 img {
+    margin-top: 10px;
+    width: 5px;
+    height: 5px;
+}
+}
+@media only screen and (max-width: 720px) and (min-width: 480px) {
+
+    /* Top Header Bar */
+    #heads {
+        width: 100%;
+        height: 20px;
+        font-size: 8px;
+        color: white;
+        background-color: rgb(26, 38, 51);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+        height: 55px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    header:hover {
+        background-color: #e6e2e2;
+    }
+
+    /* Header Title */
+    header h1 {
+        font-size: 20px;
+        color: #333;
+        margin-left: 20px;
+    }
+
+    /* Menu */
+    #menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Menu links */
+    #menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 300;
+        font-size: 12px;
+        transition: color 0.3s ease;
+    }
+
+    #menu a:hover {
+        color: rgb(26, 38, 51);
+    }
+
+    #menu img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* Body Titles */
+    body > h1 {
+        padding-top: 20px;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+        color: #333;
+    }
+
+    body > h4 {
+        margin-top: 10px;
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    /* Flats Section */
+    .flats {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .flats img {
+        width: 160px;
+        height: 220px;
+        border-radius: 20px;
+        margin-top: 10px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px #ffffff;
+        transition: transform 0.3s ease;
+    }
+
+    /* Categories */
+    #catogry {
+        flex-wrap: wrap;
+        margin-left: 20px;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 40px 50px;
+    }
+
+    #catogry > div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #catogry > div > img {
+        width: 220px;
+        height: 130px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    #catogry #types {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    #catogry #types h2 {
+        font-size: 10px;
+        color: #333;
+        margin: 0;
+    }
+
+    #catogry #types p {
+        color: #666;
+        font-size: 9px;
+        margin-top: 2px;
+    }
+
+    #catogry #icons {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+
+    /* Info Sections */
+    #down {
+        margin-top: 15px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #sub {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #end img {
+        width: 90%;
+        height: 200px;
+        margin: 25px;
+        border-radius: 30px;
+    }
+
+    /* Hero Section */
+    #bodyhead {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+    }
+
+    /* Sale Section */
+    #sale {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 40px;
+    }
+
+    #sale .flats {
+        background: #ffffff;
+        width: 300px;
+        height: 350px;
+        display: block;
+        border-radius: 25px;
+        margin-top: 25px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px #edebeb;
+        transition: transform 0.3s ease;
+    }
+
+    #sale .flats:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        filter: brightness(1.07);
+    }
+
+    #sale .flats img {
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+    }
+
+    #sale .flats p,
+    #sale .flats h3 {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    /* Past Section */
+    #past {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    #his {
+        justify-content: space-around;
+        margin: 40px;
+        width: 600px;
+        height: 300px;
+        background-color: rgb(230, 244, 255);
+    }
+
+    /* Reviews */
+    #reviews p {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    #reviews img {
+        margin-left: 30px;
+        width: 150px;
+        height: 100px;
+    }
+
+    #reviews #id #img2 {
+        border-radius: 50%;
+        margin-right: 30px;
+        height: 100px;
+        width: 100px;
+    }
+
+    #reviews #id {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    #reviews #id #photos {
+        margin-top: 20px;
+    }
+
+    /* Bottom Section */
+    #bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    #bottom #address {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #bottom p {
+        font-size: 14px;
+        margin-top: 10px;
+        color: rgb(107, 108, 114);
+    }
+
+    #bottom h2 {
+        color: rgb(107, 108, 114);
+        font-size: 16px;
+    }
+
+    #bottom h3 {
+        color: rgb(19, 19, 20);
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    #bottom map {
+        border: solid 2px white;
+        box-shadow: #ffffff 4px 4px 4px 4px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        background-color: rgb(26, 38, 51);
+        text-align: center;
+    }
+
+    #footer h3 {
+        font-size: 14px;
+    }
+
+    #footer #contact #king {
+        font-size: 12px;
+    }
+
+    #footer #contact #icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #footer #contact #icons img {
+        height: 20px;
+        width: 20px;
+    }
+
+    #footer form {
+        display: inline-block;
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    #footer label {
+        font-size: 10px;
+        color: #ffffff;
+        display: block;
+    }
+
+    #footer input {
+        padding: 10px;
+        width: 140px;
+        font-size: 10px;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+
+    #footer button {
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+        font-size: 10px;
+        background-color: rgb(58, 110, 165);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #footer p {
+        color: #919296;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    #footer #connect h2 {
+        font-weight: normal;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    /* Ender */
+    #ender {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: rgb(26, 38, 51);
+    }
+
+    #ender h3 {
+        font-weight: normal;
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    #ender h3 img {
+        margin-top: 5px;
+        width: 10px;
+        height: 10px;
+    } 
+}
+@media only screen and (max-width: 320px)  {
+    /* Top Banner */
+    #heads {
+        width: 100%;
+        height: 8px;
+        font-size: 4px;
+        color: white;
+        background-color: rgb(26, 38, 51);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3px;
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+        height: 30px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    header:hover {
+        background-color: #e6e2e2;
+    }
+
+    header h1 {
+        font-size: 10px;
+        color: #333;
+        margin-left: 10px;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 200;
+        font-size: 5px;
+        transition: color 0.3s ease;
+    }
+
+    #menu a:hover {
+        color: rgb(26, 38, 51);
+    }
+
+    #menu img {
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* Body Headings */
+    body > h1 {
+        padding-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    body > h4 {
+        margin-top: 3px;
+        text-align: center;
+        color: #666;
+        margin-bottom: 10px;
+        font-size: 8px;
+    }
+
+    /* Flats Section */
+    .flats {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 3px;
+    }
+
+    .flats img {
+        width: 90px;
+        height: 140px;
+        border-radius: 15px;
+        margin-top: 3px;
+        overflow: hidden;
+        object-fit: cover;
+        box-shadow: 0 2px 6px #ffffff;
+        transition: transform 0.3s ease;
+    }
+
+    /* Category Section */
+    #catogry {
+        flex-wrap: wrap;
+        margin-left: 10px;
+        justify-content: space-around;
+        gap: 6px;
+        padding: 20px 30px;
+    }
+
+    #catogry > div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    #catogry > div > img {
+        width: 130px;
+        height: 80px;
+        border-radius: 15px;
+        object-fit: cover;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #catogry #types {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-top: 3px;
+    }
+
+    #catogry #types h2 {
+        font-size: 4px;
+        color: #333;
+        margin: 0;
+    }
+
+    #catogry #types p {
+        color: #666;
+        font-size: 3px;
+        margin-top: 1px;
+    }
+
+    #catogry #icons {
+        width: 8px;
+        height: 8px;
+        object-fit: contain;
+        margin-right: 6px;
+    }
+
+    /* Sale Section */
+    #sale {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    #sale .flats {
+        background: #ffffff;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin-top: 15px;
+        overflow: hidden;
+        box-shadow: 0 3px 6px #edebeb;
+        transition: transform 0.3s ease;
+    }
+
+    #sale .flats img {
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+    }
+
+    #sale .flats p,
+    #sale .flats h3 {
+        margin-left: 6px;
+        margin-top: 6px;
+        font-size: 8px;
+    }
+
+    /* Past Section */
+    #past {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    #his {
+        margin: 20px;
+        width: 280px;
+        height: 200px;
+        background-color: rgb(230, 244, 255);
+    }
+
+    /* Reviews */
+    #reviews p {
+        margin-left: 10px;
+        font-size: 8px;
+    }
+
+    #reviews img {
+        margin-left: 15px;
+        width: 100px;
+        height: 70px;
+    }
+
+    #reviews #id {
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #reviews #id #img2 {
+        border-radius: 50%;
+        margin: 10px auto;
+        height: 70px;
+        width: 70px;
+    }
+
+    #reviews #id #photos {
+        margin-top: 10px;
+    }
+
+    /* Bottom Section */
+    #bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 0;
+    }
+
+    #bottom #address {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #bottom p {
+        font-size: 10px;
+        margin-top: 10px;
+        color: rgb(107, 108, 114);
+    }
+
+    #bottom h2 {
+        color: rgb(107, 108, 114);
+        font-size: 12px;
+    }
+
+    #bottom h3 {
+        color: rgb(19, 19, 20);
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    #bottom map {
+        border: solid 2px white;
+        box-shadow: #ffffff 3px 3px 3px 3px;
+        width: 90%;
+        height: 150px;
+    }
+
+    /* End Image */
+    #end img {
+        width: 90%;
+        height: 120px;
+        margin: 10px;
+        border-radius: 30px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        background-color: rgb(26, 38, 51);
+    }
+
+    #footer h3 {
+        font-size: 10px;
+    }
+
+    #footer #contact #king {
+        font-size: 8px;
+    }
+
+    #footer #contact #icons {
+        display: flex;
+        font-size: 3px;
+        justify-content: center;
+    }
+
+    #footer #contact #icons img {
+        margin-top: 5px;
+        height: 10px;
+        width: 10px;
+    }
+
+    #footer label {
+        font-size: 3px;
+        margin-top: 2px;
+    }
+
+    #footer input {
+        padding: 5px;
+        width: 60px;
+        font-size: 3px;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        margin-bottom: 4px;
+        box-sizing: border-box;
+    }
+
+    #footer button {
+        width: 45px;
+        height: 20px;
+        font-size: 3px;
+        background-color: rgb(58, 110, 165);
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #footer p {
+        color: #919296;
+        font-size: 8px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #footer #connect h2 {
+        font-weight: normal;
+        margin-top: 4px;
+        font-size: 4px;
+    }
+
+    /* Ender */
+    #ender {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        background-color: rgb(26, 38, 51);
+        padding: 4px;
+    }
+
+    #ender h3 {
+        font-weight: normal;
+        font-size: 4px;
+        padding: 4px;
+    }
+
+    #ender h3 img {
+        width: 4px;
+        height: 4px;
+        margin-top: 5px;
+    }
+}
+
+

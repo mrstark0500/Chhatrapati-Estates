@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the best estate properties and real estate listings online. Buy, sell, or rent houses, apartments, and commercial estates.">
+    <meta name="keywords" content="estate properties, real estate, buy house, apartments, commercial property">
+    <title>Contact to get Houses</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="bag.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bag.png">
+    <link rel="apple-touch-icon" href="bag.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Contact Chatrapati Estate | Flats & Real Estate in Mumbai</title>
+    <meta name="description"
+        content="Get in touch with Chatrapati Estate for buying, selling or renting flats in Mumbai, Pune, and Ambernath. Call +91 8767675777.">
+    <link rel="canonical" href="https://www.chatrapatiestate.in/contact.html">
+
+</head>
+
+<body>
+
+    <!-- Top Announcement -->
+    <div id="heads">
+        <h2>EXCLUSIVE DISCOUNTS ON YOUR DREAM FLATS!</h2>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Chatrapati Estates</h1>
+        <div id="menu">
+            <a href="index.html" id="home">Home</a>
+            <a href="shop.html" id="shop">Shop</a>
+            <a href="galary.html" id="gallery">Gallery</a>
+            <a href="contact.html" id="content">Contact</a>
+            <a href="#" id="image"><img src="bag.png" alt="bag icon"></a>
+        </div>
+    </header>
+
+    <h1>Get in Touch with Us</h1>
+    <p>Reach out for inquiries about our available flats.</p>
+
+    <!-- Contact Form Section -->
+    <div id="gettouch">
+        <div id="div1">
+            <form id="whatsappForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- ✅ Changed to type="button" so page doesn’t refresh -->
+                    <button type="button" id="sendWhatsApp">Send via WhatsApp</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="div2">
+            <img src="bg.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="subsection">
+        <div id="heading">
+            <h2>Frequently Asked <br>Questions</h2>
+        </div>
+        <div id="qna">
+            <h3>What types of flats are available?</h3>
+            <h4>We offer a variety of flats, including one, two, and three-bedroom options.</h4>
+
+            <h3>How can I contact you?</h3>
+            <h4>You can contact us via WhatsApp or phone call directly from our website.</h4>
+
+            <h3>What payment methods do you accept?</h3>
+            <h4>We accept various payment methods, including cards and bank transfers.</h4>
+
+            <h3>Do you offer virtual tours?</h3>
+            <h4>Yes, we provide virtual tours of our flats to help you explore them online.</h4>
+
+            <h3>Is there a warranty on flats?</h3>
+            <h4>Yes, many flats come with a warranty for your peace of mind.</h4>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- Contact Info -->
+        <div id="contact">
+            <h3>Contact</h3>
+            <p id="king">Get in touch with Chatrapati Estates</p>
+            <div id="icons">
+                <a href=""><img src="insta.jpg" alt="Instagram"></a>
+                <a href=""><img src="yt.png" alt="YouTube"></a>
+                <a href=""><img src="whats.jpeg" alt="WhatsApp"></a>
+                <a href=""><img src="x.jpg" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <!-- Connect Info -->
+        <div id="connect">
+            <h3>Connect</h3>
+            <h2>+91 89756 87004</h2>
+            <h2>nilrajj0001@gmail.com</h2>
+        </div>
+
+        <!-- Support Form -->
+        <div id="support">
+            <h3>Support</h3>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+            <button type="button" id="footerSend">Submit Inquiry</button>
+        </div>
+    </div>
+
+    <div id="ender">
+        <h3>&copy;2025 All rights reserved</h3>
+    </div>
+
+    <!-- Scripts -->
+    <script src="anim4.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // ===== Contact Form Submission (WhatsApp) =====
+            const sendButton = document.getElementById("sendWhatsApp");
+            sendButton.addEventListener("click", function () {
+
+                const fullName = document.getElementById("fullName").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const phone = document.getElementById("phone").value.trim();
+
+                if (!email || !phone) {
+                    alert("Please fill all required fields!");
+                    return;
+                }
+
+                const whatsappNumber = "918767675777"; // ✅ Digits only (no +, no spaces)
+                const message = encodeURIComponent(
+                    `📩 New Inquiry from Contact Page\n` +
+                    `Full Name: ${fullName || "No Name"}\n` +
+                    `Email: ${email}\n` +
+                    `Phone: ${phone}\n\n` +
+                    `Please share details about available flats.`
+                );
+
+                const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+                window.open(url, "_blank");
+
+                alert("Redirecting to WhatsApp...");
+                document.getElementById("whatsappForm").reset();
+            });
+
+
+            // ===== Footer Support Form Submission (WhatsApp) =====
+            const footerButton = document.getElementById("footerSend");
+            footerButton.addEventListener("click", function () {
+
+                const name = document.getElementById("name").value.trim();
+                if (!name) {
+                    alert("Please enter your name!");
+                    return;
+                }
+
+                const whatsappNumber = "918767675777";
+                const message = encodeURIComponent(
+                    `🧾 Footer Inquiry\n` +
+                    `Name: ${name}\n` +
+                    `I would like to get support or more information.`
+                );
+
+                const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+                window.open(url, "_blank");
+
+                alert("Redirecting to WhatsApp...");
+                document.getElementById("name").value = "";
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
