@@ -9,7 +9,7 @@ const contactBtn = document.getElementById("contactWhatsApp");
 const flatName = document.getElementById("flatName");
 const flatPrice = document.getElementById("flatPrice");
 const flatRent = document.getElementById("flatRent");
-const flatSale = document.getElementById("flatSale");
+const flatSale = document.getElementById("flatDeposit");
 const flatArea = document.getElementById("flatArea");
 const flatBhk = document.getElementById("flatBhk");
 const flatFlower = document.getElementById("flatFlower");
@@ -32,14 +32,14 @@ const flatsData = [
       "rent flat 1/tour.mp4"
     ],
     rent: "Yes",
-    sale: "Yes",
-    area: "1000 sqft",
-    bhk: "3 BHK",
-    flower: "East Facing"
+    Deposit: "2 Lakhs",
+    area: "982 sqft",
+    bhk: "3BHK",
+    flower: "East-West Facing"
   },
   {
     name: "2BHK",
-    price: "Rent: 65,000/-",
+    price: "Rent: 63,000/-",
     images: [
       "rent flat 2/f1.jpg",
       "rent flat 2/f2.jpg",
@@ -49,14 +49,14 @@ const flatsData = [
       "rent flat 2/2bhk.mp4"
     ],
     rent: "Yes",
-    sale: "No",
+    Deposit: "1.5 Lakhs",
     area: "780 sqft",
-    bhk: "2 BHK",
-    flower: "South-North"
+    bhk: "2BHK",
+    flower: "South-North(more options available)"
   },
   {
     name: "2BHK",
-    price: "Rent: 75,000/-",
+    price: "Rent: 63,000/-",
     images: [
       "rent flat 2/f3.jpg",
       "rent flat 2/f2.jpg",
@@ -65,26 +65,106 @@ const flatsData = [
       "rent flat 2/f5.jpg"
     ],
     rent: "Yes",
-    sale: "Yes",
-    area: "950 sqft",
-    bhk: "2.5 BHK",
-    flower: "West Facing"
+    Deposit: "1.5 Lakhs",
+    area: "780 sqft",
+    bhk: "2BHK",
+    flower: "South Facing(more options available)"
   },
    {
-    name: "Modern Luxury Flat 4",
-    price: "Rent: 75,000/-",
+    name: "3BHK",
+    price: "Rent: 85,000/-",
+    images: [
+      "3bhk farbised/f1.jpg",
+      "3bhk farbised/f2.jpg",
+      "3bhk farbised/f3.jpg",
+      "3bhk farbised/f4.jpg",
+      "3bhk farbised/f5.jpg"
+    ],
+    rent: "Yes",
+    Deposit: "2 Lakhs",
+    area: "950 sqft",
+    bhk: "3BHK",
+    flower: "East Facing"
+  }, {
+    name: "2BHK",
+    price: "Rent: 63,000/-",
     images: [
       "rent flat 2/f1.jpg",
       "rent flat 2/f2.jpg",
-      "rent flat 3/f3.jpg",
-      "rent flat 3/f4.jpg",
-      "rent flat 3/f5.jpg"
+      "rent flat 2/f3.jpg",
+      "rent flat 2/f4.jpg",
+      "rent flat 2/f5.jpg"
     ],
     rent: "Yes",
-    sale: "Yes",
-    area: "950 sqft",
-    bhk: "2.5 BHK",
+    Deposit: "2 Lakhs",
+    area: "780 sqft",
+    bhk: "2BHK",
     flower: "West Facing"
+  },
+  {
+    name: "3BHK(Farbised)",
+    price: "Rent: 85,000/-",
+    images: [
+      "3bhk farbised/f1.jpg",
+      "3bhk farbised/f2.jpg",
+      "3bhk farbised/f3.jpg",
+      "3bhk farbised/f4.jpg",
+      "3bhk farbised/f5.jpg"
+    ],
+    rent: "Yes",
+    Deposit: "2 Lakhs",
+    area: "982 sqft",
+    bhk: "3BHK",
+    flower: "East-West Facing"
+  },
+  {
+    name: "3BHK(28F) ",
+    price: "Rent: 85,000/-",
+    images: [
+      "rent flat 1/f1.jpg",
+      "rent flat 1/f2.jpg",
+      "rent flat 1/f3.jpg",
+      "rent flat 1/f4.jpg",
+      "rent flat 1/f5.jpg",
+      "rent flat 1/tour.mp4"
+    ],
+    rent: "Yes",
+    Deposit: "2 Lakhs",
+    area: "982 sqft",
+    bhk: "3BHK",
+    flower: "East-West Facing"
+  },
+  {
+    name: "3BHK(semi Farbised)",
+    price: "Rent: 85,000/-",
+    images: [
+      "3bhk semi farbised/f1.jpg",
+      "3bhk semi farbised/f2.jpg",
+      "3bhk semi farbised/f3.jpg",
+      "3bhk semi farbised/f4.jpg",
+      "3bhk semi farbised/f5.jpg"
+    ],
+    rent: "Yes",
+    Deposit: "2 Lakhs",
+    area: "950 sqft",
+    bhk: "3BHK",
+    flower: "East-West Facing"
+  },{
+    name: "3BHK(34F) ",
+    price: "Rent: 85,000/-",
+    images: [
+      "rent flat 1/f3.jpg",
+      "rent flat 1/f2.jpg",
+      "rent flat 1/f1.jpg",
+      "rent flat 1/f4.jpg",
+      "rent flat 1/f5.jpg",
+      "rent flat 1/tour.mp4"
+    ],
+    rent: "Yes",
+    Deposit: "2 Lakhs",
+    area: "982 sqft",
+    bhk: "3BHK",
+    flower: "East Facing"
   }
   // 👇 To add more flats, just copy and paste another object here
 ];
@@ -129,7 +209,7 @@ function updateModal() {
   flatName.textContent = currentFlat.name;
   flatPrice.textContent = currentFlat.price;
   flatRent.textContent = currentFlat.rent;
-  flatSale.textContent = currentFlat.sale;
+  flatSale.textContent = currentFlat.Deposit;
   flatArea.textContent = currentFlat.area;
   flatBhk.textContent = currentFlat.bhk;
   flatFlower.textContent = currentFlat.flower;
