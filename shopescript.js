@@ -68,7 +68,7 @@ const flatsData = [
     Deposit: "1.5 Lakhs",
     area: "780 sqft",
     bhk: "2BHK",
-    flower: "South Facing(more options available)"
+    flower: "South-North(more options available)"
   },
    {
     name: "3BHK",
@@ -99,7 +99,7 @@ const flatsData = [
     Deposit: "2 Lakhs",
     area: "780 sqft",
     bhk: "2BHK",
-    flower: "West Facing"
+    flower: "South-North(more options available)"
   },
   {
     name: "3BHK(Farbised)",
